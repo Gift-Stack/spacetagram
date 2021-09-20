@@ -2,11 +2,14 @@ import { useEffect, useContext } from 'react'
 import './App.css'
 import ImageContext from './context/imageContext'
 import RocketInSpace from './assets/rocket-in-space.gif'
+import Header from './components/Header'
 import Images from './components/Images'
 
 function App() {
   const { getImages, images, loading } = useContext(ImageContext)
-  useEffect(() => getImages(), [images, getImages])
+
+  // eslint-disable-next-line
+  useEffect(() => getImages(), [])
 
   if (loading)
     return (
@@ -14,8 +17,10 @@ function App() {
         <img src={RocketInSpace} alt="Rocket in space" />
       </div>
     )
+
   return (
     <div className="App">
+      <Header />
       <Images images={images} />
     </div>
   )

@@ -1,5 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+
+/* Loader */
 .loader {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* Header */
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 50px;
+  background: url(./assets/universe.jpg);
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+}
+.head p {
+  color: #999;
+}
+.header-text {
+  font-family: 'Monoton', cursive;
+  font-size: clamp(14px, 7vw, 2rem);
+}
+
+/* Body */
+.body {
+  margin-right: clamp(5px, 7vw, 20%);
+  margin-left: clamp(5px, 7vw, 20%);
+  margin-top: 30px;
+}
+.flex {
+  display: flex;
+  gap: 20px;
+}
+.image-item {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 10px;
+  margin: 10px auto;
+  padding-right: 20px;
+  position: relative;
+}
+.image-item img {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  min-height: 250px;
+  width: 250px;
+}
+
+@media only screen and (max-width: 700px) {
+  .head {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
