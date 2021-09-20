@@ -16,7 +16,7 @@ const ImageState = ({ children }) => {
   // Get images
   const getImages = async () => {
     const res = await axios(
-      'https://api.nasa.gov/planetary/apod?api_key=d36Zn1llE9T5aYpkU9f3PyN3hvojlgrMBu71XOKu&count=30'
+      `https://api.nasa.gov/planetary/apod?api_key=${process.env.REACT_APP_API_KEY}&count=30`
     )
     const resData = await res.data
     dispatch({ type: GET_IMAGES, payload: resData })
