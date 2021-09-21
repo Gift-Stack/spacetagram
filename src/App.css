@@ -31,7 +31,6 @@
   margin-right: clamp(5px, 7vw, 20%);
   margin-left: clamp(5px, 7vw, 20%);
   margin-top: 30px;
-  scale: 0.8;
 }
 .flex {
   display: flex;
