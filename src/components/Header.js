@@ -13,7 +13,7 @@ const Header = () => {
         <img src={Nasa} alt="Nasa" width={70} />
         <span className="header-text">Spacetagram</span>
       </div>
-      <p style={{ fontSize: 'smaller' }}>Brought to you by NASA's image API</p>
+      <p style={{ fontSize: 'small' }}>Brought to you by NASA's image API</p>
     </header>
   )
 }
