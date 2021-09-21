@@ -46,8 +46,8 @@
 .image-item img {
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
-  min-height: 250px;
-  width: 250px;
+  min-height: 150px;
+  width: 150px;
 }
 .explanation {
   margin-bottom: 60px;
