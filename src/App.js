@@ -21,7 +21,11 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Images images={images} />
+      <div className="body">
+        {images.map((image) => (
+          <Images key={image.title} image={image} />
+        ))}
+      </div>
     </div>
   )
 }
